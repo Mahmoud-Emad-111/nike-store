@@ -38,7 +38,7 @@ const Home=({shopping_bar,check_side_bar,buy,setbuy})=>{
             <h2>You are definitely a developer to watch this site to know my experiences</h2>
             <h3>This site is a demo site</h3>
             <p>There is no free hosting to deploy the backend code, but if you want to try the site with the backend
-            You can download the backend code, run it, and try the site with the backend</p>
+            You can download the backend code, run it, and try the site with the backend.</p>
             </div>
             <div>
               <ul>
