@@ -1,0 +1,35 @@
+.popular {
+  padding-bottom: 100px;
+}
+.popular h1 {
+  font-size: 50px;
+  color: #0F172A;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+.popular .items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+@media (max-width: 1278px) {
+  .popular .items {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+}
+@media (max-width: 768px) {
+  .popular h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 661px) {
+  .popular .items {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)) !important;
+  }
+}
+@media (max-width: 381px) {
+  .popular .items {
+    justify-items: start !important;
+  }
+}/*# sourceMappingURL=popular_sales.css.map */

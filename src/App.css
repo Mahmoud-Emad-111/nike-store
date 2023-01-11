@@ -1,0 +1,34 @@
+
+.container{
+  width: 91%;
+  margin: auto;
+}
+.App .app_nav{
+  overflow: hidden;
+  background-color: #1b4ce0;
+  box-shadow: 0 0px 8px 0 #e0e0e0;
+
+}
+.App .nav_active{
+  transition-duration: 1s;
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+  background-color: #ffffff80;
+  backdrop-filter: blur(8px);
+}
+.App .nav_active .Nav_bar{
+  margin-top: 0px;
+  padding: 0.9rem 0px; 
+}
+.App .nav_active .Nav_bar svg{
+  color: black;
+}
+.App .nav_active .Nav_bar img{
+  filter: brightness(0);
+
+}
+.App .nav_active .Nav_bar ul .bag::after{
+  background-color: black;
+  color: #E2E8F0;
+}

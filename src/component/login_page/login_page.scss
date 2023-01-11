@@ -1,0 +1,81 @@
+.login_page{
+    width: 350px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 2px 4px 10px 1px hsl(0deg 0% 79% / 47%);
+    text-transform: capitalize;
+    .main{
+        .form{
+            height: 300px;
+            position: relative;
+            input{
+                display: block;
+                border: none;
+                border-bottom: 1px solid #ccc;
+                outline: none;
+                padding: 5px;
+                width: 100% ;
+            }
+            .password{
+                margin-top: 2rem;
+                position: relative;
+                svg{
+                    position: absolute;
+                    width: 20px;
+                    right: 0;
+                    bottom: 7px;
+                    cursor: pointer;
+                }
+            }
+            button{
+                transform: translate(50%,50%);
+                position: absolute;
+                bottom: 90px;
+                right: 50%;
+                background-color: black;
+                border: none;
+                color: #fff;
+                font-size: 20px;
+                padding: 4px 0;
+                text-transform: capitalize;
+                width: 110px;
+                border-radius: 3px;
+            }
+        }
+        a{
+            
+            font-size: 17px;
+            text-decoration: underline;
+        }
+    }
+    .top{
+        text-align: center;
+        h1{
+            font-size: 25px;
+            font-weight: 600;
+        }
+        margin-bottom: 2rem;
+    }
+    .error{
+        position: absolute;
+        color: red;
+        font-size: 13px;
+    }
+    .error_email{
+        position: absolute;
+        color: red;
+        font-size: 12px;
+    }
+
+}
+@media (max-width:563px) {
+    .login_page{
+        .form{
+            button{
+                border-radius: 2px !important;
+                width: 80px !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.Nav_bar {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Nav_bar img {
+  width: 80px;
+}
+.Nav_bar ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+.Nav_bar ul svg {
+  cursor: pointer;
+  width: 25px;
+  color: #E2E8F0;
+}
+.Nav_bar ul .bag {
+  position: relative;
+}
+.Nav_bar ul .bag::after {
+  content: attr(count_item);
+  height: 18px;
+  font-size: 12px;
+  padding: 0 6px;
+  vertical-align: middle;
+  display: block;
+  border-radius: 50%;
+  color: black;
+  background-color: #E2E8F0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -25%);
+  text-align: center;
+}
+
+@media (max-width: 580px) {
+  .Nav_bar svg {
+    width: 20px !important;
+  }
+  .Nav_bar img {
+    width: 60px;
+  }
+}/*# sourceMappingURL=Nav_bar.css.map */

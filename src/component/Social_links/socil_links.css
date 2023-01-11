@@ -1,0 +1,29 @@
+.socil_links {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+.socil_links img {
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  transition-duration: 0.3s;
+}
+.socil_links img:hover {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 720px) {
+  .socil_links {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media (max-width: 562px) {
+  .socil_links {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}/*# sourceMappingURL=socil_links.css.map */

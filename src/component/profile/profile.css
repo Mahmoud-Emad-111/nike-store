@@ -1,0 +1,104 @@
+.profile {
+  height: 100vh;
+  position: relative;
+}
+.profile .nav {
+  padding-bottom: 1rem;
+  box-shadow: 0px 3px 3px 0px #5e5e5e;
+  width: 100%;
+  max-height: 58px !important;
+  background-color: black;
+}
+.profile .photo_icon {
+  width: 30px;
+}
+.profile .profile_main {
+  padding-bottom: 0.5rem;
+}
+.profile .profile_main .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile .profile_main .content img {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+}
+.profile .profile_main .content h2 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.profile .profile_main .content .left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.profile .profile_main .content .left label svg {
+  width: 25px;
+}
+.profile .profile_main .content button {
+  border-radius: 5px;
+  padding: 0.3rem;
+  color: white;
+  border: 1px solid #000;
+  background-color: #000;
+  transition-duration: 0.5s;
+  box-shadow: 1px 3px 4px 0px #5e5e5e;
+}
+.profile .profile_main .content button:hover {
+  background-color: white;
+  color: #000;
+}
+.profile .profile_main .content button svg {
+  display: inline;
+  width: 20px;
+}
+.profile .user_items h1 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+@media (max-width: 563px) {
+  .profile .content button {
+    padding: 0.3rem !important;
+    border-radius: 2px !important;
+  }
+  .profile .content img {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  .profile .content h2 {
+    font-size: 20px !important;
+  }
+  .profile .content p {
+    font-size: 12px !important;
+  }
+  .profile .content svg {
+    width: 20px !important;
+  }
+}
+@media (max-width: 390px) {
+  .profile .content button {
+    font-size: 10px !important;
+    padding: 0.2rem !important;
+    border-radius: 3px !important;
+  }
+  .profile .content button svg {
+    width: 12px !important;
+  }
+  .profile .content img {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .profile .content h2 {
+    font-size: 17px !important;
+  }
+  .profile .content p {
+    font-size: 10px !important;
+  }
+  .profile .content svg {
+    width: 18px !important;
+  }
+}/*# sourceMappingURL=profile.css.map */

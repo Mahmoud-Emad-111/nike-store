@@ -1,0 +1,291 @@
+.singin_page{
+
+    text-transform: capitalize;
+        overflow: hidden;
+    .top{
+
+        border-radius: 10px;
+        box-shadow: 2px 4px 10px 1px hsl(0deg 0% 79% / 47%);
+        padding: 10px;
+        padding-left: 3rem;
+        margin-bottom: 2rem;
+        h1{
+            color: #ccc;
+            font-size: 2rem;
+        }
+        
+    }
+    .singin_main{
+        border-radius: 10px;
+        box-shadow: 2px 4px 10px 1px hsl(0deg 0% 79% / 47%);
+        padding:  4rem;
+        display: flex;
+        align-items: center;    
+
+        .right{
+            flex: 2 1;
+            .form{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+                justify-content: space-around;
+                .input_form{
+                    width: 40%;
+                }
+                input{
+                    border: none;
+                    border-bottom: 1px solid #ccc;
+                    outline: none;
+                    padding: 5px;
+                    width: 90% !important;
+                    min-width: 100%;
+                }
+                .password{
+                    position: relative;
+                    svg{
+                        position: absolute;
+                        width: 20px;
+                        right: 0;
+                        bottom: 7px;
+                        cursor: pointer;
+                    }
+                }
+                button{
+                    background-color: black;
+                    border-radius: 5px;
+                    border: none;
+                    color: #fff;
+                    font-size: 25px;
+                    padding: 7px;
+                    text-transform: capitalize;
+                    width: 188px;
+                }
+            }
+        }
+    }
+    .error{
+        position: absolute;
+        color: red;
+        font-size: 13px;
+    }
+}
+@media (max-width:1000px) {
+    .singin_page{
+        .singin_main{
+            padding: 3rem;
+        }
+        .left{
+            flex: 0.8 !important;
+            img{
+                width: 100px !important;
+                height: 100px !important;
+            } 
+        }
+        .right{
+            flex: 3 !important;
+            button{
+                font-size: 20px !important;
+                width: 120px !important;
+            }
+        }
+    }
+}
+@media (max-width:800px){
+    .singin_page{
+        .singin_main{
+            gap: 80px;
+            flex-direction: column !important;
+            .form{
+                input{
+                    min-width: 110% !important;
+                }
+                .password{
+                    svg{
+                        right: -20px !important;
+                    }
+                }
+            }
+        }
+        button{
+            margin-top: 1rem;
+        }
+    }
+}
+@media (max-width:800px){
+    .singin_page{
+
+        .singin_main{
+            .left{
+                position: relative;
+                right: -40% !important;
+            }
+            align-items: flex-start;
+            .form{
+                flex-direction: column;
+                input{
+                    min-width: 300% !important;
+                }
+                .password{
+                    svg{
+                        right: -260px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:550px){
+    .singin_page{
+        .top{
+            h1{
+                font-size: 1.5rem;
+            }
+        }
+        .singin_main{
+            img{
+                width: 80px !important;
+                height: 80px !important;
+            }
+            .form{
+                input{
+                    min-width: 250% !important;
+
+                }
+                .password{
+                    svg{
+                        right: -200px !important;
+                    }
+                }            
+            }
+        }
+    }
+}
+@media (max-width:460px){
+    .singin_page{
+        .singin_main{
+
+            .form{
+                .password{
+                    svg{
+                        right: -180px !important;
+                        width: 15px !important;
+                    }
+                }            
+            }
+        }
+        .error{
+            font-size: 10px;
+        }
+    }
+}
+@media (max-width:413px){
+    .singin_page{
+
+        .singin_main{
+            gap: 1rem !important;
+            img{
+                width: 60px !important;
+                height: 60px !important;
+            }
+            .form{
+                label{
+                    font-size: 13px;
+
+                }
+                ::placeholder{
+                    font-size: 10px;
+                }
+                input{
+                    min-width: 200% !important;
+                    // width: 200px !important;
+                }
+                .password{
+                    svg{
+                        right: -120px !important;
+                    }
+                }
+                button{
+                    padding: 4px !important;
+                    font-size: 18px !important;
+                    width: 80px !important;
+                }            
+            }
+        }
+    }
+}
+@media (max-width:390px){
+    .singin_page{
+
+        .singin_main{
+            .left{
+                transform: translateX(-20%);
+            }
+
+            .form{
+                label{
+                    font-size: 11px;
+
+                }
+                ::placeholder{
+                    font-size: 10px;
+                }
+                input{
+                    min-width: 250% !important;
+                    // width: 200px !important;
+                }
+                .password{
+                    svg{
+                        right: -160px !important;
+                    }
+                }
+                button{
+                    padding: 4px !important;
+                    font-size: 18px !important;
+                    width: 80px !important;
+                }            
+            }
+        }
+    }
+    .error{
+        width: 500%;
+    }
+}
+@media (max-width:361px){
+    .singin_page{
+        .form{
+            .password{
+                svg{
+                    left: 220px;
+                    
+                }
+            }
+        }
+    }
+}
+
+// @media (max-width:333px){
+//     .singin_page{
+//         svg{
+//             left: 150px !important;
+//         }
+//     }
+// }
+@media (max-width:281px){
+    .singin_page{
+        .top{
+            padding: 10px;
+            h1{
+            font-size: 1rem;
+
+            }
+        }
+        .form{
+            .password{
+                svg{
+                    left: 150px;
+                    
+                }
+            }
+        }
+    }
+}

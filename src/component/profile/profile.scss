@@ -1,0 +1,115 @@
+.profile{
+    height: 100vh;
+    position: relative;
+    .nav{
+        padding-bottom: 1rem;
+        box-shadow: 0px 3px 3px 0px #5e5e5e;
+        width: 100%;
+        max-height: 58px !important;
+        background-color: black;
+    }
+    .photo_icon{
+        width: 30px;
+    }
+    .profile_main{
+        padding-bottom: 0.5rem;
+        .content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                border-radius: 50%;
+                width: 90px;
+                height: 90px;
+            }
+            h2{
+                font-size: 25px;
+                font-weight: 600;
+            }
+            .left{
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                label{
+                    svg{
+                        width: 25px;
+                    }
+                }
+            }
+            button{
+                border-radius: 5px;
+                padding: 0.3rem;
+                color: white;
+                border: 1px solid #000;
+                background-color: #000;
+                transition-duration: 0.5s;
+                box-shadow: 1px 3px 4px 0px #5e5e5e;
+                &:hover{
+                    background-color: white;
+                    color: #000;
+                }
+                svg{
+                    display: inline;
+                    width: 20px;
+                }
+            }
+        }
+    }
+    .user_items{
+        h1{
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    }
+}
+@media (max-width:563px) {
+    .profile{
+        .content{
+            button{
+                padding: 0.3rem !important;
+                border-radius: 2px !important;
+            }
+            img{
+                width: 60px !important;
+                height: 60px !important;
+            }
+            h2{
+                font-size: 20px !important;
+            }
+            p{
+                font-size: 12px !important;
+            }
+            svg{
+                width: 20px !important;
+            }
+        }
+    }
+}
+@media (max-width:390px) {
+    .profile{
+        .content{
+            button{
+                svg{
+                    width: 12px !important;
+                }
+                font-size: 10px !important;
+                padding: 0.2rem !important;
+                border-radius: 3px !important;
+            }
+            img{
+                width: 50px !important;
+                height: 50px !important;
+            }
+            h2{
+                font-size: 17px !important;
+            }
+            p{
+                font-size: 10px !important;
+            }
+            svg{
+                width: 18px !important;
+            }
+        }
+    }
+}

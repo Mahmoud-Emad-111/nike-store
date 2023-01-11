@@ -1,0 +1,30 @@
+.socil_links{
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    
+    img{
+        position: absolute;
+        width:85% ;
+        height: 85%;
+        &:hover{
+            width: 100%;
+            height: 100%;
+        }
+        transition-duration: 0.3s;
+    }
+    cursor: pointer;
+}
+@media (max-width:720px){
+    .socil_links{
+        width: 2rem;
+        height: 2rem;
+    }
+
+}
+@media (max-width:562px){
+    .socil_links{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}

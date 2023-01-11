@@ -1,0 +1,35 @@
+.sales{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    
+    h1{
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: #0F172A;
+    }
+    .items{
+        // justify-items: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 25px;
+        // background-color: red;
+    }
+}
+
+@media (max-width:750px) {
+    .sales{
+        h1{
+            margin-top: 5rem;
+            font-size: 2.5rem;
+        }
+    }
+}
+@media (max-width:660px){
+    .items{
+        // justify-items: center;
+        // display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
+        // gap: 25px;
+        // background-color: red;
+    }
+}

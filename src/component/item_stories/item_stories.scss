@@ -1,0 +1,116 @@
+.item_stories{
+    margin: 0px 0.5rem;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    
+    img{
+        width: 100%;
+        max-width: 100%;
+    }
+    .info{
+        svg{
+            width: 17px;
+        }
+        display: flex;
+        justify-content: space-between;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        
+        .like ,.time ,.hashtag{
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+        }
+
+        .like{
+            svg{
+                color: red;
+            }
+        }
+        .hashtag{
+            color: blue;
+        }
+        
+    }
+
+    .detalis{
+        padding: 0px 1rem;
+        padding-bottom: 1rem;
+        h3{
+        color: #0f172A;
+        font-weight: bold;
+        padding: 10px 0px;
+
+        }
+        a{
+            text-align: center;
+            bottom: 30px;
+            display: block;
+            background-color: #0f172A;
+            color: white;
+            padding: 7px 14px;
+            margin-top: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px -1px #0f172a;
+        }        
+    }
+}
+@media (max-width:1280px) {
+    .item_stories{
+        .info{
+            svg{
+                width: 15px;
+            }
+            .like ,.time ,.hashtag{
+                font-size: 12px;
+            }
+
+
+        }
+        p{
+            font-size: 12px;
+            font-weight:600 ;
+            
+            
+        }
+    }
+}
+
+@media (max-width:1110px){
+    .item_stories{
+        .info{
+            padding: 0;
+            justify-content: space-evenly;
+        }
+    }
+}
+@media (max-width:1086px){
+    .item_stories{
+        h3{
+            font-size: 14px;
+            font-weight: 900 !important;
+        }
+    }
+}
+@media (max-width:768px){
+    .item_stories{
+        h3{
+            font-size: 13px;
+        }
+        p{
+            font-size: 10px;
+            font-weight: 700;
+        }
+        .like ,.time ,.hashtag{
+            font-size: 10px !important;
+            svg{
+                width: 12px !important;
+            }
+        }
+
+    }
+}

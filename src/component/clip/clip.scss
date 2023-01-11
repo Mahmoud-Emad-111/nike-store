@@ -1,0 +1,89 @@
+.clip{
+    position: relative;
+    height: 7rem;
+    width:8rem;
+    overflow: hidden;
+    transition-duration:0.3s;
+    cursor: pointer;
+    border-radius: 0.7rem;
+    img{
+        width:100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        object-fit: cover;
+        position: absolute;
+        z-index: 10;
+    }
+    video{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        object-fit: cover;
+    }
+    &:hover {
+        video{
+            z-index: 100;
+        }
+    }
+    .paly_icon{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: #E2E8F0;
+        transform: translate(-50%,-50%);
+        z-index: 150;
+        width: 3rem;
+    }
+
+}
+@media (max-width:950px){
+    .clip{
+        height: 6rem;
+        width:7rem;       
+    }
+}
+@media (max-width:820px){
+    .clip{
+        height: 5rem;
+        width:6rem;
+        .paly_icon{
+            width: 2rem;
+        }       
+    }
+}
+@media (max-width:562px){
+    .clip{
+        height: 4rem;
+        width:5rem;
+    border-radius: 0.4rem;
+
+    }
+    .paly_icon{
+        width: 1rem;
+    }       
+}
+@media (max-width:562px){
+    .clip{
+        height: 3rem;
+        width:4rem;       
+    }
+    .paly_icon{
+        width: 1rem !important;
+    }       
+}
+
+
+@media (max-width:415px){
+    .clip{
+        height: 2rem;
+        width:3rem;       
+    }
+    .paly_icon{
+        width: 1rem !important;
+    }       
+}

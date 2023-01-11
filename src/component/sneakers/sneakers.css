@@ -1,0 +1,101 @@
+.sneakers {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sneakers .left {
+  width: 40%;
+}
+.sneakers .left img {
+  width: 100%;
+  transform: rotate(20deg);
+  cursor: pointer;
+  transition-duration: 1s;
+}
+.sneakers .left img:hover {
+  transform: rotate(10deg);
+}
+.sneakers .right {
+  width: 50%;
+}
+.sneakers .right h3 {
+  color: #3b82f6;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0;
+}
+.sneakers .right h2 {
+  font-size: 35px;
+  font-weight: 800;
+  margin: 0;
+  color: #0f172A;
+}
+.sneakers .right p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0f172A;
+}
+.sneakers .right a {
+  display: inline-block;
+  background-color: #0f172A;
+  color: white;
+  padding: 7px 14px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px -1px #0f172a;
+}
+
+@media (max-width: 1024px) {
+  .sneakers h3 {
+    font-size: 40px !important;
+  }
+  .sneakers h2 {
+    font-size: 25px !important;
+  }
+  .sneakers p {
+    font-size: 15px !important;
+  }
+}
+@media (max-width: 1024px) {
+  .sneakers h3 {
+    font-size: 30px !important;
+  }
+  .sneakers h2 {
+    font-size: 12px !important;
+  }
+  .sneakers p {
+    font-size: 10px !important;
+  }
+  .sneakers a {
+    padding: 5px 12px !important;
+    font-size: 10px;
+  }
+  .sneakers img {
+    width: 90% !important;
+  }
+}
+@media (max-width: 550px) {
+  .sneakers {
+    flex-direction: column;
+  }
+  .sneakers .left, .sneakers .right {
+    width: 100%;
+  }
+  .sneakers img {
+    width: 50% !important;
+    margin-left: 7rem;
+  }
+}
+@media (max-width: 400px) {
+  .sneakers h3 {
+    font-size: 20px !important;
+  }
+  .sneakers h2 {
+    font-size: 9px !important;
+  }
+  .sneakers img {
+    width: 60% !important;
+    margin-left: 5rem;
+  }
+}/*# sourceMappingURL=sneakers.css.map */
